@@ -85,76 +85,76 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\VMProtect\mainwindow.h">
+    <QtMoc Include="..\VMProtect\mainwindow.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\models.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\models.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\widgets.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\property_editor.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\property_editor.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\progress_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\progress_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\license_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\license_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\import_license_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\import_license_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\function_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\function_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\export_key_pair_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\export_key_pair_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\watermarks_window.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\watermarks_window.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\settings_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\settings_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\message_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\message_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\watermark_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\watermark_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\about_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\about_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\template_save_dialog.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\template_save_dialog.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\templates_window.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\templates_window.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\help_browser.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\help_browser.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\application.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\application.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\remotecontrol_win.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\remotecontrol_win.h">
+    </QtMoc>
+    <QtMoc Include="..\VMProtect\remotecontrol.h">
       <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\VMProtect\remotecontrol.h">
-      <Filter>src</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\third-party\scintilla\ScintillaEditBase.h">
+    </QtMoc>
+    <QtMoc Include="..\third-party\scintilla\ScintillaEditBase.h">
       <Filter>ScintillaQT</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\third-party\scintilla\ScintillaQt.h">
+    </QtMoc>
+    <QtMoc Include="..\third-party\scintilla\ScintillaQt.h">
       <Filter>ScintillaQT</Filter>
-    </CustomBuild>
+    </QtMoc>
     <CustomBuild Include="..\VMProtect\styles.qss">
       <Filter>res</Filter>
     </CustomBuild>
     <CustomBuild Include="..\VMProtect\application.qrc" />
+    <QtMoc Include="..\VMProtect\widgets.h">
+      <Filter>src</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\third-party\scintilla\PlatQt.h">

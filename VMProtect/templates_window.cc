@@ -7,7 +7,6 @@
 #include "help_browser.h"
 #include "message_dialog.h"
 #include "templates_window.h"
-#include "moc/moc_templates_window.cc"
 
 /**
  * TemplatesWindow

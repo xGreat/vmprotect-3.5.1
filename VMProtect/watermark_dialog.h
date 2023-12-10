@@ -1,6 +1,10 @@
 #ifndef WATERMARK_DIALOG_H
 #define WATERMARK_DIALOG_H
 
+class Watermark;
+class WatermarkManager;
+class BinEditor;
+
 class WatermarkDialog : public QDialog
 {
     Q_OBJECT

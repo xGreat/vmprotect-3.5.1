@@ -1184,7 +1184,7 @@ NTSTATUS RegistryManager::NtQueryKey(HANDLE KeyHandle, KEY_INFORMATION_CLASS Key
 		if (object && object->ref()) {
 			if ((object->access() & KEY_QUERY_VALUE) == 0)
 			{
-				 // Special case (âçÿò èç win2k/private/ntos/config/ntapi.c:NtQueryKey)
+				 // Special case (Ð²Ð·ÑÑ‚ Ð¸Ð· win2k/private/ntos/config/ntapi.c:NtQueryKey)
 				if(KeyInformationClass != KeyNameInformation || object->access() == 0) {
 #ifdef CHECKED
 					XTrace(L"NtQueryKey STATUS_ACCESS_DENIED %p\n", object->access());

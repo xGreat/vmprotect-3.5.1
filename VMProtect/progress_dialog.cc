@@ -4,7 +4,6 @@
 
 #include "wait_cursor.h"
 #include "progress_dialog.h"
-#include "moc/moc_progress_dialog.cc"
 #include "message_dialog.h"
 
 /**
@@ -18,7 +17,7 @@ ProgressDialog::ProgressDialog(QWidget *parent)
 	progressBar->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
 	QFontMetrics fontMetrics = progressBar->fontMetrics();
 	QString spaces;
-	while (fontMetrics.width(spaces) < 58)
+	while (fontMetrics.horizontalAdvance(spaces) < 58)
 		spaces += QLatin1Char(' ');
 	progressBar->setFormat(progressBar->format() + spaces);
 

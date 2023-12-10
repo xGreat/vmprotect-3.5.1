@@ -77,11 +77,11 @@ TEST(CoreTest, IsUniqueWatermark)
 TEST(CoreTest, UTF8Validator)
 {
 	ASSERT_TRUE(os::ValidateUTF8(std::string()));
-	ASSERT_TRUE(os::ValidateUTF8(os::ToUTF8(os::unicode_string(L"кириллица"))));
-	ASSERT_FALSE(os::ValidateUTF8(std::string("кириллица 1251")));
+	ASSERT_TRUE(os::ValidateUTF8(os::ToUTF8(os::unicode_string(L"РєРёСЂРёР»Р»РёС†Р°"))));
+	ASSERT_FALSE(os::ValidateUTF8(std::string("РєРёСЂРёР»Р»РёС†Р° 1251")));
 }
 TEST(CoreTest, FromACP)
 {
-	ASSERT_TRUE(os::FromACP(std::string("кириллица 1251")) == os::unicode_string(L"кириллица 1251"));
+	ASSERT_TRUE(os::FromACP(std::string("РєРёСЂРёР»Р»РёС†Р° 1251")) == os::unicode_string(L"РєРёСЂРёР»Р»РёС†Р° 1251"));
 }
 #endif

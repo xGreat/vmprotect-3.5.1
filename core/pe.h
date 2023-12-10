@@ -771,13 +771,14 @@ typedef struct _IMAGE_DELAY_IMPORT_DESCRIPTOR {
 	DWORD   TimeStamp;
 } IMAGE_DELAY_IMPORT_DESCRIPTOR;
 
+/*
 typedef struct _IMAGE_LOAD_CONFIG_CODE_INTEGRITY {
 	WORD    Flags;          // Flags to indicate if CI information is available, etc.
 	WORD    Catalog;        // 0xFFFF means not available
 	DWORD   CatalogOffset;
 	DWORD   Reserved;       // Additional bitmask to be defined later
 } IMAGE_LOAD_CONFIG_CODE_INTEGRITY, *PIMAGE_LOAD_CONFIG_CODE_INTEGRITY;
-
+*/
 //
 // Load Configuration Directory Entry
 //

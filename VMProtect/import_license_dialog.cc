@@ -2,7 +2,6 @@
 #include "../core/lang.h"
 #include "import_license_dialog.h"
 #include "widgets.h"
-#include "moc/moc_import_license_dialog.cc"
 #include "help_browser.h"
 
 /**

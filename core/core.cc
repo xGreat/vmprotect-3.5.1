@@ -12,6 +12,7 @@
 #include "elffile.h"
 #include "lang.h"
 #include "core.h"
+#include "../third-party/tinyxml/tinyxml.h"
 
 #ifdef __APPLE__
 #include <Security/SecKey.h>

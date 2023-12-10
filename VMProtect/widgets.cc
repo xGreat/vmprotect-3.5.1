@@ -1,7 +1,6 @@
 #include "../core/objects.h"
 #include "../core/lang.h"
 #include "widgets.h"
-#include "moc/moc_widgets.cc"
 #include "models.h"
 #include "watermarks_window.h"
 #include "application.h"
@@ -567,10 +566,10 @@ void BinEditor::init()
 {
 	QFontMetrics fm(fontMetrics());
     lineHeight_ = fm.lineSpacing();
-    charWidth_ = fm.width(QChar(QLatin1Char('M')));
+    charWidth_ = fm.horizontalAdvance(QChar(QLatin1Char('M')));
 	margin_ = charWidth_;
 	addressWidth_ = charWidth_ * 4;
-	columnWidth_ = 2 * charWidth_ + fm.width(QChar(QLatin1Char(' ')));
+	columnWidth_ = 2 * charWidth_ + fm.horizontalAdvance(QChar(QLatin1Char(' ')));
     textWidth_ = bytesPerLine_ * charWidth_ + charWidth_;
     
 	numLines_ = data_.size() / bytesPerLine_ + 1;
@@ -711,7 +710,7 @@ void BinEditor::paintEvent(QPaintEvent *e)
 				painter.drawText(x, y, itemString);
 				painter.restore();
 			} else {
-				QRect cursorRect = QRect(text_x + fm.width(printable.left(pos)), y - ascent, fm.width(printable.at(pos)), lineHeight_);
+				QRect cursorRect = QRect(text_x + fm.horizontalAdvance(printable.left(pos)), y - ascent, fm.horizontalAdvance(printable.at(pos)), lineHeight_);
 				if (!overwriteMode_)
 					cursorRect.setWidth(1);
 				painter.save();
@@ -743,7 +742,7 @@ int BinEditor::posAt(const QPoint &pos) const
             QChar qc(data_[posn]);
             if (!qc.isPrint())
                 qc = 0xB7;
-            x -= fontMetrics().width(qc);
+            x -= fontMetrics().horizontalAdvance(qc);
             if (x <= 0)
                 break;
         }
@@ -1452,7 +1451,7 @@ TreeViewItemDelegate::TreeViewItemDelegate(QObject *parent)
 void TreeViewItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option,
 	const QModelIndex &index) const
 {
-	QStyleOptionViewItemV4 opt = option;
+	QStyleOptionViewItem opt = option;
 	opt.state &= ~QStyle::State_HasFocus;
 	initStyleOption(&opt, index);
 	const QWidget *widget = opt.widget;
@@ -1478,7 +1477,7 @@ void TreeViewItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &
 			style->pixelMetric(QStyle::PM_FocusFrameHMargin, 0, widget) + 1, 1);
 		if (!opt.text.isEmpty())
 			opt.text += " ";
-		textRect.adjust(painter->fontMetrics().width(opt.text) + textMargin.width(), 0, 0, 0);
+		textRect.adjust(painter->fontMetrics().horizontalAdvance(opt.text) + textMargin.width(), 0, 0, 0);
 
 		value = index.data(Qt::Vmp::StaticColorRole);
 		if (value.canConvert<QBrush>())
@@ -1488,18 +1487,18 @@ void TreeViewItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &
 			// branch symbols
 			opt.text = QChar(0x2190 + text[0].unicode() - 1);
 			style->drawItemText(painter, textRect, opt.displayAlignment, opt.palette, true, opt.text);
-			textRect.adjust(painter->fontMetrics().width(opt.text), 0, 0, 0);
+			textRect.adjust(painter->fontMetrics().horizontalAdvance(opt.text), 0, 0, 0);
 			text = text.mid(1);
 		}
 		opt.text = text;
-		style->drawItemText(painter, textRect, opt.displayAlignment, opt.palette, true, elidedText(opt.fontMetrics, textRect.width(), Qt::ElideRight, opt.text));
+		style->drawItemText(painter, textRect, opt.displayAlignment, opt.palette, true, opt.fontMetrics.elidedText(opt.text, Qt::ElideRight, textRect.width()));
 		painter->restore();
 	}
 }
 
 QSize TreeViewItemDelegate::sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
-	QStyleOptionViewItemV4 opt = option;
+	QStyleOptionViewItem opt = option;
 	const int border = (opt.widget->objectName().startsWith("grid") ? 1 : 0);
 	const int min_height = 18 * Application::stylesheetScaleFactor() + border;
 

@@ -315,7 +315,7 @@ private:
 class WatermarkManager;
 class IniFile;
 class SettingsFile;
-
+class TiXmlElement;
 class Watermark : public IObject
 {
 public:

@@ -1,6 +1,8 @@
 #ifndef TEMPLATES_WINDOW_H
 #define TEMPLATES_WINDOW_H
 
+class TemplatesModel;
+class ProjectTemplate;
 class TemplatesWindow : public QDialog
 {
 	Q_OBJECT

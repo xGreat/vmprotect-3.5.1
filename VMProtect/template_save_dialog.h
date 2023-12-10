@@ -1,6 +1,8 @@
 #ifndef TEMPLATE_SAVE_DIALOG_H
 #define TEMPLATE_SAVE_DIALOG_H
 
+class EnumEdit;
+class ProjectTemplateManager;
 class TemplateSaveDialog : public QDialog
 {
     Q_OBJECT

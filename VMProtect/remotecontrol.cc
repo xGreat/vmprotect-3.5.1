@@ -1,10 +1,8 @@
 //#include "../core/objects.h"
 #include "remotecontrol.h"
-#include "moc/moc_remotecontrol.cc"
 
 #ifndef VMP_GNU
 #include "remotecontrol_win.h"
-#include "moc/moc_remotecontrol_win.cc"
 
 StdInListenerWin::StdInListenerWin(QObject *parent)
 	: QThread(parent)

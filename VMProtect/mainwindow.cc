@@ -11,7 +11,6 @@
 #include "property_editor.h"
 #include "progress_dialog.h"
 #include "mainwindow.h"
-#include "moc/moc_mainwindow.cc"
 #include "function_dialog.h"
 #ifdef ULTIMATE
 #include "license_dialog.h"
@@ -1716,7 +1715,7 @@ void MainWindow::examples()
 #else
 	wchar_t buf[MAX_PATH];
 	QString path;
-	// приоритетная папка, сюда дистрибутив пишет
+	// приоритетн? папк? сюда дистрибути?пише?
 	if (SHGetSpecialFolderPathW(0, buf, CSIDL_COMMON_DOCUMENTS, FALSE))
 	{
 		path = QDir::fromNativeSeparators(QString::fromWCharArray(buf)) + "/VMProtect";
@@ -1725,8 +1724,8 @@ void MainWindow::examples()
 	}
 	if (path.isEmpty())
 	{
-		// если несколько юзеров работают одновременно, надо каждому скопировать папку из CSIDL_COMMON_DOCUMENTS к себе в документы,
-		// а исходную грохнуть - в итоге каждый работает со своим каталогом
+		// если нескольк?юзеров работают одновременно, надо каждом?скопироват?папк?из CSIDL_COMMON_DOCUMENTS ?себе ?документ?
+		// ?исходную грохнуть - ?итог?каждый работает со свои?каталого?
 		path = QStandardPaths::standardLocations(QStandardPaths::DocumentsLocation).first() + "/VMProtect";
 	}
 #endif

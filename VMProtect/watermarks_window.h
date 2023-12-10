@@ -1,6 +1,18 @@
 #ifndef WATERMARKS_WINDOW_H
 #define WATERMARKS_WINDOW_H
 
+#include <vector>
+#include <map>
+
+class IFile;
+class Watermark;
+class WatermarksModel;
+class ProjectNode;
+class SearchLineEdit;
+class SearchModel;
+class WatermarkScanModel;
+class EnumEdit;
+class FileNameEdit;
 class WatermarksWindow : public QDialog
 {
     Q_OBJECT

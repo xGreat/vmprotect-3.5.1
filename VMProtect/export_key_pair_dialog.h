@@ -1,6 +1,7 @@
 #ifndef EXPORT_KEY_PAIR_DIALOG_H
 #define EXPORT_KEY_PAIR_DIALOG_H
 
+class LicensingManager;
 class ExportKeyPairDialog : public QDialog
 {
     Q_OBJECT

@@ -1,6 +1,8 @@
 #ifndef FUNCTION_DIALOG_H
 #define FUNCTION_DIALOG_H
+#include "../core/files.h"
 
+class IArchitecture;
 struct AddressInfo {
 	uint64_t address;
 	IArchitecture *arch;
@@ -11,6 +13,12 @@ enum ShowMode {
 	smGotoAddress
 };
 
+class IFile;
+class EnumProperty;
+class BoolProperty;
+class MapFunctionBundleListModel;
+class MapFunctionListModel;
+class SearchLineEdit;
 class FunctionDialog : public QDialog
 {
     Q_OBJECT

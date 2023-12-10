@@ -2247,7 +2247,7 @@ typedef struct OMFSourceModule
     unsigned long   baseSrcFile[1];
 } OMFSourceModule;
 
-//портировано из WINEDUMP с сохранением большинства имен
+//РїРѕСЂС‚РёСЂРѕРІР°РЅРѕ РёР· WINEDUMP СЃ СЃРѕС…СЂР°РЅРµРЅРёРµРј Р±РѕР»СЊС€РёРЅСЃС‚РІР° РёРјРµРЅ
 static const char       pdb2[] = "Microsoft C/C++ program database 2.00";
 static const char       pdb7[] = "Microsoft C/C++ MSF 7.00";
 

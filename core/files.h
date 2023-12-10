@@ -6,6 +6,8 @@
 #define FILES_H
 
 #include "../runtime/common.h"
+#include "../core/objects.h"
+#include <map>
 
 std::string NameToString(const char name[], size_t name_size);
 std::string DisplayString(const std::string &str);

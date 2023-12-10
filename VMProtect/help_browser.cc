@@ -1,7 +1,6 @@
 #include "help_browser.h" 
 #include "message_dialog.h" 
 #include "widgets.h" 
-#include "moc/moc_help_browser.cc"
 #include "../core/objects.h"
 #include "../core/lang.h"
 #include "../core/inifile.h"

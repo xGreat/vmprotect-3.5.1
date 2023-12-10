@@ -6,7 +6,6 @@
 #include "widgets.h"
 #include "settings_dialog.h"
 #include "help_browser.h"
-#include "moc/moc_settings_dialog.cc"
 #include "application.h"
 
 /**

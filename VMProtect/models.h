@@ -2,6 +2,7 @@
 #define MODELS_H
 
 #include "widgets.h"
+#include "../core/objects.h"
 
 class Folder;
 class IFunction;

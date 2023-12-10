@@ -4,7 +4,6 @@
 #include "../core/lang.h"
 #include "export_key_pair_dialog.h"
 #include "widgets.h"
-#include "moc/moc_export_key_pair_dialog.cc"
 #include "help_browser.h"
 
 /**

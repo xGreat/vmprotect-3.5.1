@@ -2,7 +2,6 @@
 #include "../core/lang.h"
 
 #include "message_dialog.h"
-#include "moc/moc_message_dialog.cc"
 
 /**
  * MessageDialog

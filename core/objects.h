@@ -4,6 +4,8 @@
 
 #ifndef OBJECTS_H
 #define OBJECTS_H
+#include <stdexcept>
+#include <vector>
 
 std::string string_format(const char *format, ...);
 

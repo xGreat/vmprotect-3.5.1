@@ -7,7 +7,6 @@
 #include "template_save_dialog.h"
 #include "help_browser.h"
 #include "message_dialog.h"
-#include "moc/moc_template_save_dialog.cc"
 
 /**
  * TemplateSaveDialog

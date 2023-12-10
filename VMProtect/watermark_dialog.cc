@@ -3,7 +3,6 @@
 #include "../core/core.h"
 #include "widgets.h"
 #include "watermark_dialog.h"
-#include "moc/moc_watermark_dialog.cc"
 #include "help_browser.h"
 #include "application.h"
 

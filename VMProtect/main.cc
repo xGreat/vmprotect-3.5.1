@@ -1,7 +1,6 @@
-#include "../core/objects.h"
+п»ї#include "../core/objects.h"
 #include "../core/osutils.h"
 #include "application.h"
-#include "moc/moc_application.cc"
 #include "mainwindow.h"
 #include "help_browser.h"
 
@@ -96,7 +95,7 @@ void Application::initScalingConstants()
 
 	devicePixelRatio_ = 
 #ifdef __APPLE__
-		1.4 *  // проверял на виртуалке (RENDER_DPI для мака, говорят, примерно во столько раз меньше), но подозреваю, что на макбуке с ретиной получим сюрприз
+		1.4 *  // РїСЂРѕРІРµСЂСЏ?РЅР° РІРёСЂС‚СѓР°Р»Рє?(RENDER_DPI РґР»СЏ РјР°РєР°, РіРѕРІРѕ?? РїСЂРёРјРµСЂРЅРѕ РІРѕ СЃС‚РѕР»СЊРє?СЂР°?РјРµРЅСЊС€Рµ), РЅРѕ РїРѕРґРѕР·СЂРµРІР°СЋ, С‡С‚?РЅР° РјР°РєР±СѓРє??СЂРµС‚РёРЅРѕ?РїРѕР»СѓС‡Рё?СЃСЋСЂРїСЂРё?
 #endif
 		devicePixelRatio();
 

@@ -1,6 +1,8 @@
 #ifndef SETTINGS_DIALOG_H
 #define SETTINGS_DIALOG_H
 
+class EnumEdit;
+class BoolEdit;
 class SettingsDialog : public QDialog
 {
     Q_OBJECT

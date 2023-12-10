@@ -1,6 +1,9 @@
 #ifndef LICENSE_DIALOG_H
 #define LICENSE_DIALOG_H
 
+class License;
+class LicensingManager;
+class BinEditor;
 class LicenseDialog : public QDialog
 {
     Q_OBJECT

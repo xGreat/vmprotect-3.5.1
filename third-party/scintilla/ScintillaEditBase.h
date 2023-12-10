@@ -16,6 +16,10 @@
 namespace Scintilla {
 #endif
 
+#include <QAbstractScrollArea>
+#include <QMimeData>
+#include "Scintilla.h"
+
 class ScintillaQt;
 class SurfaceImpl;
 struct SCNotification;

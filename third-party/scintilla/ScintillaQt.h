@@ -11,6 +11,9 @@
 #ifndef SCINTILLAQT_H
 #define SCINTILLAQT_H
 
+#include <QAbstractScrollArea>
+#include <QMimeData>
+#include <QClipboard>
 #include "Scintilla.h"
 #include "Platform.h"
 #include "ILexer.h"

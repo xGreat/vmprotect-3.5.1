@@ -8,6 +8,14 @@
 // Additions Copyright (c) 2011 Archaeopteryx Software, Inc. d/b/a Wingware
 // ScintillaQt.cpp - Qt specific subclass of ScintillaBase
 
+
+#include <QApplication>
+#include <QMenu>
+#include <QAction>
+#include <QScrollBar>
+#include <QTextCodec>
+#include <QTimer>
+#include <QDrag>
 #include "PlatQt.h"
 #include "ScintillaQt.h"
 #ifdef SCI_LEXER
@@ -15,7 +23,6 @@
 #include "ExternalLexer.h"
 #endif
 
-#include "../../VMProtect/moc/moc_ScintillaQt.cc"
 
 #ifdef SCI_NAMESPACE
 using namespace Scintilla;

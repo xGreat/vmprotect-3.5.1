@@ -1,6 +1,9 @@
 #ifndef PROPERTY_EDITOR_H
 #define PROPERTY_EDITOR_H
 
+#include "widgets.h"
+#include "../core/files.h"
+
 class Property : public QObject
 {
     Q_OBJECT
@@ -103,6 +106,7 @@ public:
 	virtual bool hasValue() const { return false; }
 };
 
+class ICommand;
 class CommandProperty : public Property
 {
 	Q_OBJECT

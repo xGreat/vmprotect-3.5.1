@@ -1,4 +1,4 @@
-#ifndef CRYPTO_H
+п»ї#ifndef CRYPTO_H
 #define CRYPTO_H
 
 #include "common.h"
@@ -159,7 +159,7 @@ struct RC5Key {
 	uint32_t P;
 	uint32_t Q;
 #endif
-	RC5Key() {} //-V730 мусор тоже годится
+	RC5Key() {} //-V730 РјСѓСЃРѕСЂ С‚РѕР¶Рµ РіРѕРґРёС‚СЃСЏ
 #ifdef RUNTIME
 	RC5Key(const uint8_t *key)
 	{

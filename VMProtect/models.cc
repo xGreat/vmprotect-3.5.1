@@ -6,7 +6,6 @@
 #include "../core/lang.h"
 
 #include "models.h"
-#include "moc/moc_models.cc"
 #include "widgets.h"
 #include "property_editor.h"
 #include "message_dialog.h"
@@ -3868,7 +3867,7 @@ QVariant DisasmModel::headerData(int section, Qt::Orientation /*orientation*/, i
 
 bool ItemModelSearcher::extractMatchingIndexes(const QModelIndex &parent)
 {
-	//TODO: возможны дальнейшие оптимизации
+	//TODO: возможны дальнейшие оптимизаци?
 	if (current_match_ == NULL)
 		current_match_ = &match_before_;
 

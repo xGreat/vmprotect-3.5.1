@@ -11,6 +11,9 @@
 #ifndef PLATQT_H
 #define PLATQT_H
 
+#include <QtGui>
+#include "Platform.h"
+
 #ifdef SCI_NAMESPACE
 namespace Scintilla {
 #endif

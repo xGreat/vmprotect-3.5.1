@@ -1,5 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#include "../core/objects.h"
 
 class GUILog;
 class FunctionBundle;

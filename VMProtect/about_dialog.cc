@@ -5,7 +5,6 @@
 #include "widgets.h"
 #include "about_dialog.h"
 #include "help_browser.h"
-#include "moc/moc_about_dialog.cc"
 
 /**
  * AboutDialog

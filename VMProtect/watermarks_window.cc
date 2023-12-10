@@ -11,7 +11,6 @@
 #include "widgets.h"
 #include "progress_dialog.h"
 #include "watermarks_window.h"
-#include "moc/moc_watermarks_window.cc"
 #include "message_dialog.h"
 #include "watermark_dialog.h"
 #include "wait_cursor.h"
@@ -574,7 +573,7 @@ void WatermarksWindow::processEditChanged()
 		
 		moduleEdit->addItem(
 			QString::fromUtf8(modules[i].name.c_str())
-#ifdef __unix__ // может быть много строк для одного файла по разным адресам (addr === HANDLE)
+#ifdef __unix__ // РјРѕР¶Рµ?Р±С‹С‚СЊ РјРЅРѕРі?СЃС‚СЂРѕ?РґР»СЏ РѕРґРЅРѕРіРѕ С„Р°Р№Р»?РїРѕ СЂР°Р·РЅС‹Рј Р°РґСЂРµСЃР°?(addr === HANDLE)
 				+ QString(" @%1").arg((uint64_t)modules[i].handle, sizeof(void *) * 2, 16, QLatin1Char('0')).toUpper()
 #endif
 				,

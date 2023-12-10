@@ -4973,7 +4973,7 @@ namespace UnitTestProject.RefVm
 				    {
 					    if (name == StringDecryptor.GetString(-1550345495) /* SetTypedReference */)
 					    {
-						    TypedReference.SetTypedReference((TypedReference)args[0], args[1]);
+                TypedReference.SetTypedReference(TypedReference.MakeTypedReference(args[0], args[0].GetType().GetFields()), args[1]);
 						    return true;
 					    }
 				    }
@@ -4982,17 +4982,17 @@ namespace UnitTestProject.RefVm
 			    {
 				    if (name == StringDecryptor.GetString(-1550345682) /* GetTargetType */)
 				    {
-					    result = TypedReference.GetTargetType((TypedReference)args[0]);
+					    result = TypedReference.GetTargetType(TypedReference.MakeTypedReference(args[0], args[0].GetType().GetFields()));
 					    return true;
 				    }
 				    if (name == StringDecryptor.GetString(-1550345534) /* TargetTypeToken */)
 				    {
-					    result = TypedReference.TargetTypeToken((TypedReference)args[0]);
+					    result = TypedReference.TargetTypeToken(TypedReference.MakeTypedReference(args[0], args[0].GetType().GetFields()));
 					    return true;
 				    }
 				    if (name == StringDecryptor.GetString(-1550345512) /* ToObject */)
 				    {
-					    result = TypedReference.ToObject((TypedReference)args[0]);
+					    result = TypedReference.ToObject(TypedReference.MakeTypedReference(args[0], args[0].GetType().GetFields()));
 					    return true;
 				    }
 			    }

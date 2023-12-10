@@ -4,7 +4,6 @@
 #include "../core/lang.h"
 #include "widgets.h"
 #include "license_dialog.h"
-#include "moc/moc_license_dialog.cc"
 #include "message_dialog.h"
 #include "wait_cursor.h"
 #include "help_browser.h"

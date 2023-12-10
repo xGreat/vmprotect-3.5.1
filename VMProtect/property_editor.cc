@@ -10,7 +10,6 @@
 #include "widgets.h"
 #include "models.h"
 #include "property_editor.h"
-#include "moc/moc_property_editor.cc"
 
 std::string formatBase64(const std::string &value)
 {

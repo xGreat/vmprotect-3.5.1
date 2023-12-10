@@ -10,7 +10,6 @@
 #include "function_dialog.h"
 #include "message_dialog.h"
 #include "help_browser.h"
-#include "moc/moc_function_dialog.cc"
 #include "application.h"
 
 /**
